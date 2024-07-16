@@ -25,7 +25,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-ysc5g=2@xyk#agsytgjdemq6t4+862f!5kaopgag_8py804@yd'
+
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -86,9 +87,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'hastane_db2',
         'USER': 'postgres',
-        'PASSWORD': '1234',
+        'PASSWORD': '******',
         'HOST': 'localhost',
-        'PORT': '5432'
+        'PORT': '*****'
     }
 }
 
@@ -137,12 +138,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+DEFAULT_FILE_STORAGE = '********'
 
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'dkkol6di6',
-    'API_KEY': '121146955463279',
-    'API_SECRET': 'OE5BXUAbdtfY79VPATdbSt4r5ok'
+    'CLOUD_NAME': '******',
+    'API_KEY': '*******',
+    'API_SECRET': '*******'
 }
 cloudinary.config(
     cloud_name=CLOUDINARY_STORAGE['CLOUD_NAME'],
